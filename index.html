@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="Efilapuri (1).ico">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">Portafolio</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="#home">INICIO</a></li>
+        <li><a href="#about me">SOBRE MI</a></li>
+        <li><a href="#habilidades">SKILLS</a></li>
+        <li><a href="#contacto">CONTACTAME</a></li>
+
+    </ul>
+</header>
+<!--SECCION INICIO-->
+<section class="home" id="home">
+    <div class="home-text">
+        <h4>Hola, me llamo</h4>
+        <h1>Sergi <span>Aparisi</span></h1>
+        <h3>Estudiante de DAW</h3>
+        <div class="newslatter">
+            <form>
+                <input type="email" name="email" id="mail" placeholder="Pon tu email">
+                <input type="submit" name="submit" value="Comencemos">
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--SECCION SOBRE MÍ--> 
+
+<section class="about" id="about me">
+    <div class="about-img">
+        <img src="planchabragas.png" alt="Sergi Aparisi rostro">
+    </div>
+    <div class="about-text">
+        <h2>Sobre Mi</h2>
+        <h5>Estudiante <span>DAW</span></h5>
+        <p>Me llamo Sergi Aparisi Lopez y soy un estudiante de <span>DAW</span> de primer año, que le gustaria acceder a dicha dual para poner en practica todos mis conocimientos sobre la informatica </p>
+        <a href="SAL_CV_V.pdf" class="btn" download="Curriculum">Descargar Curriculum</a>
+        
+    </div>
+   
+</section>
+
+<!--SECCION HABILIDADES--> 
+
+<section id="habilidades">
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p>Html & Css</p>
+                <p class="porcentaje">65%</p>
+            </div>
+            <div class="barra">
+                <div class="barra-progreso1" id="html"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p>Base de Datos</p>
+                <p class="porcentaje">55%</p>
+            </div>
+            <div class="barra">
+                <div class="barra-progreso2" id="js"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p>Trabajo en equipo</p>
+                <p class="porcentaje">100%</p>
+            </div>
+            <div class="barra">
+                <div class="barra-progreso3" id="bd"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p>Constante</p>
+                <p class="porcentaje">90%</p>
+            </div>
+            <div class="barra">
+                <div class="barra-progreso4" id="calc"></div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="contact" id="contacto">
+
+    <div class="contact-form">
+        <h3>Contactame ahora</h3>
+        <p>Para cualquier duda podeis contactar a mi correo</p>
+
+        <form action="https://formsubmit.co/aparisi.lopez.sergi@gmail.com" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+                <br>
+            <label for="email">Tu Email</label>
+
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Enviar" class="send" >
+            
+            <input type="hidden" name="_next" value="https://seergilopez.github.io/PORTAFOLIO_Curriculum1/#contacto">
+            <input type="hidden" name="_captcha" value="false">
+            
+        </form>
+    </div>
+
+</section>
+
+
+<!--SECCION FOOTER-->
+
+<footer>
+    <div class="footer-content">
+        <h3>Desarrollador Web</h3>
+        <p>Para mas opciones de contacto</p>
+        <ul class="socials">
+            <li><a href="https://api.whatsapp.com/send?phone=678177111&text=Buenas,%20me%20gustaria%20contactarte"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/seergilopez/"><i class="fa-brands fa-instagram"></i></a></li>
+            
+        </ul>
+    </div>
+    
+</footer>
+
+<script src="https://kit.fontawesome.com/99d7cefe11.js" crossorigin="anonymous"></script> <!--"LINK DE ICONOS"-->
+
+
+<script type="text/javascript" src="script.js" placheolder="Tu mensaje..." class="input-full"></script> <!--"LINK PARA PAGINA JAVA.SCRIPT"-->
+    
+</body>
+</html>

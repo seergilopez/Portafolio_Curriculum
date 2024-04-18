@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --bg-color: #101010;
+    --secound-bg-color: #191919;
+    --text-color: #fff;
+    --secound-color: #c6c9d8bf;
+    --main-color: #f9004d;
+    --big-font: 5,3rem;
+    --h2-font: 4,2rem;
+    --p-font: 1,1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 25px 15%;
+    transition-duration: .3s ;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    left: 0;
+    bottom: -4px;
+    transition: ease .40s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+#menu-icon{
+    font-size: 32px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 120px 15%;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.home-text h1{
+    margin: 20px 0 20px;
+    font-size: var(--big-font);
+    font-size: 80px;
+}
+span {
+    color: var(--main-color);
+}
+.home-text h3{
+    font-size: 28px;
+    margin-bottom: 55px;
+}
+.home-text h4{
+    font-size: 22px;
+    color: var(--secound-color);
+    letter-spacing: 4px;
+}
+.newslatter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{
+    display:inline-block;
+    width: 100%;
+    outline: none;
+    padding: 16px 140px 16px 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 30px
+}
+.newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: var(--main-color);
+    color: var(--text-color);
+    padding: 12px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 6px #000, 0px 0px 14px #868686;
+    cursor: pointer;
+    top: 6px;
+    right: 6px;
+}
+header.sticky{
+    padding: 12px 15%;
+    background: var(--main-color);
+}
+.sticky .navbar a::after{
+    background: var(--text-color);
+}
+
+
+/*SECCION SOBRE MI*/
+
+
+.about{
+    background: var(--secound-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 2rem;
+}
+.about-img img{
+    max-width: 100%;
+    width: 500px;
+    height:auto;
+    border-radius: 10px;
+    
+}
+.about-text h2{
+    font-size: var(--h2-font);
+    margin-bottom: 20px;
+    font-size: 72px;
+}
+.about-text h5{
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.about-text p{
+    color: var(--secound-color);
+    letter-spacing: 1px;
+    line-height: 28px;
+    max-width: 590px;
+    font-size: var(--p-font);
+    margin-bottom: 45px;
+}
+.btn{
+    display: inline-block;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 2px solid transparent;
+    font-weight: 600;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: ease .35s;
+}
+.btn:hover{
+    transform: translateY(-8px);
+    border: 2px solid var(--main-color);
+    background: transparent;
+}
+
+
+/*SECCION HABILIDADES*/
+
+
+.contenedor-skills{
+    background: linear-gradient(#ff0051af, rgba(33,16,16,.8)), url(skills2.avif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0;
+    text-align: center;
+    font-size: 25px;
+}
+.contenedor-skills .skill{
+    max-width: 600px;
+    margin: 30px auto ;
+}
+.contenedor-skills .skill .info{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-skills .skill .lista{
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+.contenedor-skills .skill .barra{
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+.contenedor-skills .skill .barra-progreso1{
+    background-color: #fff;
+    width: 25%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+.contenedor-skills .skill .barra-progreso2{
+    background-color: #fff;
+    width: 10%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+.contenedor-skills .skill .barra-progreso3{
+    background-color: #fff;
+    width: 30%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+.contenedor-skills .skill .barra-progreso4{
+    background-color: #fff;
+    width: 35%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+@keyframes progreso1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes progreso2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 55%;
+    }
+}
+@keyframes progreso3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes progreso4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.info p{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+/*SECCION DE CONTACTO*/
+
+.contact{
+    background: var(--bg-color);
+    display: grid;
+    grid-template-columns: 2,2fr;
+    align-items: center;
+    grid-gap: 3rem;
+}
+.contact-form h3{
+    font-size: var(--h2-font);
+    margin-bottom: 15px ;
+    font-size: 60px;
+}
+.contact-form p{
+    color: var(--secound-color);
+    letter-spacing: 1px;
+    line-height: 100px;
+    margin-bottom: 4,1rem;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: var(--secound-bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-form form .send{
+    display: inline-block;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: ease .35s;
+    text-transform: uppercase;
+}
+.contact-form form .send:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+    color: black;
+}
+
+/*SECCION FOOTER*/
+
+footer{
+position: absolute;
+background:var(--secound-bg-color);
+height: auto;
+width: 100vw;
+font-family: "Open Sans";
+padding-top: 40px;
+color: #fff;
+}
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.footer-content h3{
+font-size: 1.8rem;
+font-weight: 400;
+text-transform: capitalize;
+line-height: 3rem;
+}
+.footer-content p{
+max-width: 500px;
+margin: 10px auto;
+line-height: 28px;
+font-size: 14px;
+}
+.socials{
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 1rem 0 3rem 0;
+}
+.socials li{
+margin: 0 10px;
+}
+.socials a{
+text-decoration: none;
+color: #fff;
+}
+.socials a i{
+font-size: 1.1rem;
+transition: color .4s ease;
+
+}
+.socials a:hover i{
+color: aqua;
+}
+
+.footer-bottom{
+background: #000;
+width: 100vw;
+padding: 20px 0;
+text-align: center;
+}
+.footer-bottom p{
+font-size: 14px;
+word-spacing: 2px;
+text-transform: capitalize;
+}
+.footer-bottom span{
+text-transform: uppercase;
+opacity: .4;
+font-weight: 200;
+}
+
+
+/*SECCION HEADER SUBPAGINA MASINFO*/
+
+.logo_masinfo_subpagina{
+    color: var(--text-color);
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 500px;
+}
+
+.logo_masinfo_subpagina:hover{
+    color: #5222ff;
+    transform: translateY(4px);
+    cursor: pointer;
+}
